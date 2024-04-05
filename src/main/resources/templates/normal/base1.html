@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="Layout(content)">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<title th:text="${title}">Base Html !!</title>
+</head>
+<style>
+
+.bg-primary{
+	
+	background:#009688 !important;
+}
+.banner{
+width:100%;
+height: 93vh;
+background:Linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/31.jpg);
+background-size:cover;
+color:white;
+}
+
+.my-card{
+
+padding:20px;
+background: #FFFFFF;
+
+
+}
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width:600px;
+  height: 420px;
+  border: 1px solid #9C9C9C;
+  background-color: white;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+@media only screen and (max-width: 600px){
+.sidebar{
+display:none;
+width:80% !important ;
+background:white;
+height:100vh;
+position:fixed;
+padding-top:20px;
+z-index:99999999999999999999999999;
+}
+.content{
+margin-left:0%!important;
+}
+}
+.sidebar{
+width:18%;
+background:white;
+height:100%;
+position:fixed;
+padding-top:45px;
+}
+
+.sidebar a{
+
+	display: block;
+	width: 100%;
+	padding: 10px 25px;
+	text-decoration: none;
+	color:gray;
+	}
+
+
+.sidebar .divider{
+height: .5px;
+width: 100%;
+
+margin-top:10px;
+	
+} 
+
+.content{
+	margin-left:10%;
+
+}
+
+.sidebar .crossBtn{
+position:absolute;
+top:0;
+right: 35px;
+font-size: 36px;
+cursor:pointer;
+
+}
+.my_profile_picture{
+width:35px;
+height:35px;
+object-fit:cover;
+border-radius:50%;
+
+}
+
+
+
+
+</style>
+<body>
+	<!--navbar -->
+	<!--navbar -->
+	<nav class=" fixed-top navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">Resume Builder</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+			<ul class="navbar-nav ml-auto text-uppercase">
+
+				
+
+				<li class="nav-item">
+					<a class="nav-link "  href="#"><span ></span></a>
+				</li>
+
+			</ul>
+
+		</div>
+	</nav>
+	
+
+
+
+				<!--End side bar-->
+					<div class="content mt-5">
+		
+		
+		
+		<!-- message box -->
+		
+		<
+	  <div th:replace="${content}"></div>
+					</div>
+		
+		
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	
+	<script>
+
+	
+
+	
+	</script>
+	<script th:src="@{/JS/script1.js}"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::Layout(~{::body})">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+</head>
+
+
+
+
+<body>
+
+
+ <div class="login-container my-5">
+<form th:action="@{/dologin}" method="post"  th:object="${user}"> 
+ 
+ 
+    <h1 class="text-dark">Welcome Back</h1>
+    <p>Please login to your account</p>
+    <div class="input-group">
+      <input  placeholder="Enter email Here" required type="email" id="typeEmailX" name ="username" class="form-control form-control-lg">
+    </div>
+    <div class="input-group">
+      <input placeholder="Enter Password" type="password" name ="password" id="typePasswordX" class="form-control form-control-lg">
+    </div>
+    <button type="submit" th:href="@{landingpage1}">Login</button>
+    <div class="bottom-text my-3">
+      <p>Don't have an account? <a href="#" th:href="@{home}">Sign Up</a></p>
+   
+    </div>
+  </form>
+</div>
+<script src="/JS/index.js" />
+ </body>
+</html>

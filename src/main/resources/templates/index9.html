@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>RESUME MAKER</title>
+<link rel="stylesheet" href="/CSS/index.css"> 
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><h2><i class="fa-solid fa-file"></i> Make Resume</h2></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" th:href="@{/homepage}">HOME</a>
+        </li>
+      
+                <li class="nav-item">
+          <a class="nav-link active" href="#"  th:href="@{/about}">ABOUT US</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link active" href="#"  th:href="@{/contact}">CONTACT</a>
+        </li>
+        
+        
+      </li>
+          </ul> 
+    <form class="d-flex 	">
+      <a  th:href="@{/home}" class="text-dark" >   <button type="button" class="btn btn-outline-dark nav-item">Register</button></a>
+       <a th:href="@{/login}" class="text-dark"> <button type="button" class="btn btn-outline-dark mx-2">Login</button></a>
+          
+        
+      </form>
+    </div>
+  </div>
+</nav>
+
+<section>
+ <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/Img/resume_01.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item my-8">
+      <img src="/Img/00.jpg " class="d-block w-100" alt="...">
+    </div>
+    
+    
+   </div>
+
+</section>
+
+<section>
+<div id="services" class="services container-fluid">
+        <div class="container">
+            <div class="session-title row">
+                <h2 class="text-dark text-center">Steps to make resume</h2>
+                <div class="heading-line"></div>
+            </div>
+            <div class="services-row row my-5">
+                <div class="col-md-4 seric-div">
+                    <div class="service-card">
+                        <i class="far fa-file-image"></i>
+                        <h4>Find the right template. </h4>
+                        <p>Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore
+                            magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 seric-div">
+                    <div class="service-card">
+                        <i class="fas fa-desktop"></i>
+                        <h4>Edit Resume</h4>
+                        <p>Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore
+                            magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 seric-div">
+                    <div class="service-card">
+                        <i class="fa-solid fa-code"></i>
+                        <h4>Save resume</h4>
+                        <p>Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore
+                            magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="book_food py-5" id="book_food">
+    <div class="container">
+      <div class="row">
+        <div class="food_items d-flex justify-content-evenly">
+          <div class="food_content position-relative">
+            <h1 class="main_heading text-white">Features designed to help you win your dream job.</h1>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="food_section">
+    <div class="food_section wrapper">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-sm-12">
+            <div class="food_content text-center">
+              <h1 class="main_heading">
+                Explore Our Templates</h1>
+              <p class="main_pra text-center">
+                Use the best resume maker as your guide
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+            <div class="card">
+            <a th:href="@{/login}">
+              <img src="/Img/resume-1.jpeg" class="img-fluid" alt="Sandwitch">
+              </a>
+              <div class="pt-3">
+                  <div class="main_btn about_btn my-4 w-auto">
+                 <!--  <a th:href="@{/resume1}"><button type="button" class="btn btn-outline-dark">SEE TEMPLATE<i class="fa-solid fa-angle-right ms-2"></i></button></a> -->
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+            <div class="card">
+             <a th:href="@{/login}">
+              <img src="/Img/resume-2.jpeg" class="img-fluid" alt="Sandwitch">
+              </a>
+              <div class="pt-3">
+                <div class="main_btn about_btn my-4 w-auto">
+                 <!--  <a  th:href="@{/resume2}"><button type="button" class="btn btn-outline-dark">SEE TEMPLATE<i class="fa-solid fa-angle-right ms-2"></i></button></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+            <div class="card">
+             <a th:href="@{/login}">
+    <img th:src="@{/Img/resume-3.jpg}" class="img-fluid" alt="Sandwich">
+</a>
+              <div class="pt-3">
+                    <div class="main_btn about_btn my-4 w-auto">
+                 <!--  <a  th:href="@{/resume3}"><button type="button" class="btn btn-outline-dark" > SEE TEMPLATE<i class="fa-solid fa-angle-right ms-2"></i></button></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="Testimonial">
+    <div class="testimonial_section wrapper py-5">
+      <div class="container text-center">
+        <div class="Testimonial_content">
+          <h1 class="main_heading text-dark">OUR EXPERTS</h1>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-lg-10 offset-lg-1">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel_caption">
+                <img src="/Img/7.jpeg"  alt="Testimonial_Image">
+                <P class="main_pra">
+                 Getting that dream job can seem like an impossible task. We’re here to change that. 
+                </P>
+                <h5>Riya- UX Designer</h5>
+              </div>
+            </div>
+              <div class="carousel-item">
+                <div class="carousel_caption">
+                <img src="/Img/25.jfif"  alt="Testimonial_Image">
+                <P class="main_pra">
+                  Give yourself a real advantage with the best online resume maker: created by experts.
+ 
+                </P>
+                <h5>Reshma - Front end developer</h5>
+              </div>
+              </div>
+
+            </div>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+  </section>
+  
+  
+<footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                                <p>Don’t miss any updates of our new templates and extensions.!</p>
+                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                    <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                    <p class="mchimp-errmessage" style="display: none;"></p>
+                                    <p class="mchimp-sucmessage" style="display: none;"></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                                <ul class="list-unstyled f_list">
+                                  <li><a href="#"  th:href="@{/about}">About</a></li>
+                                    <li><a href="#" th:href="@{/contact}">Contact</a></li>
+                                    <li><a href="#" th:href="@{/homepage}">HOME</a></li>
+                                    <li><a href="#" th:href="@{/contact}">Contact</a></li>
+                                    <li><a href="#" th:href="@{/homepage}">HOME</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#" th:href="@{/contact}">Contact</a></li>
+                                    <li><a href="#" th:href="@{/homepage}">HOME</a></li>
+                                    <li><a href="#" th:href="@{/contact}">Contact</a></li>
+                                    <li><a href="#" th:href="@{/homepage}">HOME</a></li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                               
+                                <div class="f_social_icon">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="/JS/index.js" />
+
+
+</html>
+
